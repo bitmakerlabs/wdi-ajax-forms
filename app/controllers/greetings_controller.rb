@@ -9,7 +9,6 @@ class GreetingsController < ApplicationController
     @greeting = Greeting.new(greeting_params)
     @greeting.save
     respond_to do |format|
-      format.html { render html: "<li>#{@greeting.note}</li>".html_safe }
       format.json { render json: @greeting.to_json }
     end
   end

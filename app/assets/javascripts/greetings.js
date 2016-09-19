@@ -9,10 +9,10 @@ $(document).ready(function() {
     $.ajax({
       url: "/greetings",
       method: "post",
-      dataType: "html",
+      dataType: "json",
       data: $(this).serialize()
     }).done(function(returnedData) {
-      $('#greeting-list').prepend(returnedData);
+      $('#greeting-list').prepend('<li>' + returnedData.note + '</li>');
     });
   });
 
