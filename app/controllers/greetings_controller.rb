@@ -7,10 +7,11 @@ class GreetingsController < ApplicationController
 
   def create
     @greeting = Greeting.new(greeting_params)
-    @greeting.save
-    respond_to do |format|
-      format.html { render html: "<li>#{@greeting.note}</li>".html_safe }
-      format.json { render json: @greeting.to_json }
+    if @greeting.save
+      redirect_to greetings_path
+    else
+      @greetings = Greeting.all.order("created_at desc")
+      render :index
     end
   end
 
