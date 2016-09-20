@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo contains 4 branches, each of which showing an example of how we would respond to a particular type of AJAX request within Rails.
 
-Things you may want to cover:
+The 4 branches cover:
 
-* Ruby version
+* master (default non-AJAX form submission)
 
-* System dependencies
+* html (AJAX request with dataType set to html)
 
-* Configuration
+* partial (AJAX request with dataType set to html, with Rails returning a partial instead of inline html)
 
-* Database creation
+* json (AJAX request with dataType set to json)
 
-* Database initialization
+* script (showing Rails' remote: true option to handle AJAX)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
