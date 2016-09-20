@@ -2,7 +2,7 @@
 
 This repo contains 4 branches, each of which showing an example of how we would respond to a particular type of AJAX request within Rails.
 
-The 4 branches cover:
+The 4 branches are:
 
 * master (default non-AJAX form submission)
 
