@@ -15,10 +15,7 @@
   <%= form_for @greeting,  html: {id: "greeting-form"} do |f| %>
     <%= f.label :note, "Say something:" %>
     <%= f.text_field :note %>
-    <%= f.submit "Submit" %>
+    <%= f.submit "Submit", :data => { disable_with: false } %>
   <% end %>
 
 </div>
-
-
-  
