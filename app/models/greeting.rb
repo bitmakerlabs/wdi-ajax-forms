@@ -1,2 +1,2 @@
-class Greeting < ActiveRecord::Base
+class Greeting < ApplicationRecord
 end
